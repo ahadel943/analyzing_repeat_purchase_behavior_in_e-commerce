@@ -1,4 +1,4 @@
-# Analyzing Repeat Purchase Behavior in E-commerce
+# **Analyzing Repeat Purchase Behavior in E-commerce**
 
 ## Project Overview
 This project analyzes customer purchasing behavior in an e-commerce business
@@ -45,4 +45,28 @@ that could help improve customer retention.
 
 ## Schema Design
 ![schema](./schema/schema.png)
+
+## Data Preparation & EDA
+### Data Preparation
+- Checked for missing values across all tables.
+- Verified primary key uniqueness.
+- Checked for duplicate records.
+- Validated order status consistency.
+- Confirmed relational integrity between tables.
+- **No significant data quality issues were found.
+The dataset was considered clean and suitable for analysis.**
+
+### Exploratory Data Analysis (EDA)
+- The **customers** table contains **10,000** customers, The **orders** table contains **25,096** orders, The **products** contains **1,200** products and the **order_items** table contains **62,454** records.
+
+![customers_by_segment](./charts/1.customers_by_segment.png)
+- Customer segmentation labels indicate that:
+    - 50% of customers are classified as one-time customers.
+    - 30% as occasional customers.
+    - Only 20% as loyal customers.
+- The customer type distribution may suggest relatively weak customer retention behavior, However, these labels are predefined and not directly derived
+from transactional purchase behavior.
+![customers_by_city](./charts/2.customers_by_city.png)
+- 
+
 
