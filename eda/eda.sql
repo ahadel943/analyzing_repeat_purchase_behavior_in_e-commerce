@@ -123,7 +123,33 @@ from customers
 group by city
 order by 2 desc;
 
+-- customers by signup date
+select 
+  extract(year from signup_date) as year,
+  extract(month from signup_date) as month,
+  to_char(signup_date,'Mon') as month_name,
+  count(customer_id) as customers_count
+from customers
+group by year, month, month_name
+order by year, month, month_name;
 
+select 
+  extract(year from signup_date) as year,
+  extract(month from signup_date) as month,
+  extract(day from signup_date) as day,
+  count(customer_id) as customers_count
+from customers
+group by year, month, day
+order by year, month, day;
+
+-- products distribution by category and product type
+select
+  category,
+  product_type,
+  count(product_id) as product_count
+from products
+group by category, product_type
+order by category, product_type;
 
 
 
