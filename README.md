@@ -66,7 +66,23 @@ The dataset was considered clean and suitable for analysis.**
     - Only 20% as loyal customers.
 - The customer type distribution may suggest relatively weak customer retention behavior, However, these labels are predefined and not directly derived
 from transactional purchase behavior.
+---
 ![customers_by_city](./charts/2.customers_by_city.png)
-- 
-
-
+- Customer distribution across cities appears relatively balanced,
+with no single city dominating the customer base.
+- **Mansoura** has the highest number of customers (**2,046**),
+followed closely by **Giza**, **Alexandria**, **Cairo**, and **Tanta**.
+- This suggests that customer acquisition is geographically diversified
+across multiple cities rather than concentrated in one region.
+---
+![3.monthly_customer_trend](./charts/3.monthly_customer_trend.png)
+- Customer acquisition remained relatively stable throughout the observed period,
+with monthly new customer counts generally ranging between **600** and **800** customers.
+- The dataset covers customer signups from **October 2022** to **December 2023**,
+No major fluctuations or consistent downward trends were observed in customer acquisition activity.
+- **December 2023** shows an unusually low customer count (**20 customers**),
+which appears to be caused by incomplete data for that month,
+as only the first day of December is present in the dataset.
+- Overall, the data does not indicate a significant customer acquisition issue,
+suggesting that **low repeat purchase behavior** may be more related to retention
+than acquisition performance.
