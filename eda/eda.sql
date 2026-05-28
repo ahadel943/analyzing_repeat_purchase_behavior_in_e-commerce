@@ -151,6 +151,44 @@ from products
 group by category, product_type
 order by category, product_type;
 
+-- products price stats
+select
+  min(price) as min_price,
+  max(price) as max_price,
+  round(avg(price), 2) as avg_price,
+  max(price) - min(price) as price_range,
+  percentile_cont(0.25) within group (order by price) as "1st_quratile",
+  percentile_cont(0.50) within group (order by price) as "median / 2nd_quratile",
+  percentile_cont(0.75) within group (order by price) as "3rd_quratile",
+  round(stddev_pop(price), 2) as standard_deviation
+from products;
 
+-- products price by category
+select
+  category,
+  count(product_id) as product_count,
+  round(avg(price), 2) as category_avg_price,
+  min(price) as category_min_price,
+  max(price) as category_max_price
+from products
+group by category
+order by category_avg_price desc;
 
+-- the 10 products with the highest prices
+select
+  product_name,
+  category,
+  price
+from products
+order by price desc
+limit 10;
+
+-- the 10 products with the lowest prices
+select
+  product_name,
+  category,
+  price
+from products
+order by price asc
+limit 10;
 

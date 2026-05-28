@@ -86,3 +86,46 @@ as only the first day of December is present in the dataset.
 - Overall, the data does not indicate a significant customer acquisition issue,
 suggesting that **low repeat purchase behavior** may be more related to retention
 than acquisition performance.
+---
+![product_status_by_category](./charts/4.product_status_by_category.png)
+- Product distribution across categories and product types
+appears relatively consistent throughout the dataset.
+- In all categories, **normal** products represent the majority of products,
+while **hot** and **dead** products appear in smaller and relatively similar proportions.
+- This balanced distribution may indicate that **product_type** values
+are **predefined labels** rather than classifications directly derived
+from actual product performance or sales behavior.
+---
+| Variable       | Value                      |
+| -------------- | -------------------------- |
+| min_price                 | 50.68           |
+| max_price                 | 4,990.19        |
+| avg_price                 | 1092.76         |
+| price_range               | 4,939.51        |
+| 1st_quratile              | 299.33          |
+| median / 2nd_quratile     | 568.68          |
+| 3rd_quratile              | 1,294.33        |
+| standard_deviation        | 1,217.12        |
+- Product prices show **high variability** across the dataset,
+with prices ranging from **50.68** to **4,990.19**.
+- The wide price range is expected due to the presence
+of multiple product categories with different pricing structures,
+such as **low-priced beauty products** and **higher-priced electronics**.
+- The average product price (**1,092.76**) is significantly higher
+than the median price (**568.68**), indicating a **right-skewed** price distribution, This suggests that a smaller number of **high-priced products
+are pulling the average upward**.
+- Additionally, the large standard deviation (**1,217.12**) and the wide spread between quartiles indicate **substantial price dispersion** across products.
+- These patterns suggest the possible presence of **high-price outliers**,
+which may influence customer purchasing behavior and repeat purchase activity.
+---
+| category       | product_count | category_avg_price | category_min_price | category_max_price |
+| -------------- | ------------- | ------------------ | ------------------ | ------------------ |
+| electronics    | 300           | 2,841.24           | 500.69             | 4,990.19           |
+| home           | 297           | 836.70             | 208.10             | 1,490.32           |
+| clothing       | 268           | 456.34             | 101.83             | 796.99             |
+| beauty         | 335           | 263.11             | 50.68              | 497.99             |
+- Inspection of the highest- and lowest-priced products
+further confirms the category-level pricing patterns observed earlier.
+- The most expensive products are primarily electronics products,
+while the lowest-priced products mainly belong to the beauty category.
+- These observations support the previously identified right-skewed price distribution and reinforce the assumption that electronics products are major contributors to overall price variability.
