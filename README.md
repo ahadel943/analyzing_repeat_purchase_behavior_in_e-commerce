@@ -163,3 +163,14 @@ are pulling the average upward.
 - The **highest** concentration of orders falls within the **2,000–4,000** range, followed by **higher-value** ranges above **4,000**, suggesting that customer purchases are not limited to low-value transactions only.
 - **Lower-value** orders between **50** and **500** represent a smaller portion of completed orders, while **higher-value** order ranges continue to account for a substantial share of total order activity.
 - These patterns suggest a relatively balanced distribution of customer spending levels across the platform, rather than extreme concentration within a single spending segment.
+---
+![revenue_and_units_sold_by_category](./charts/8.revenue_and_units_sold_by_category.png)
+- Revenue contribution differs significantly across product categories.
+- Although **electronics** products do not have the highest sales volume, they generate the **highest total revenue** by a substantial margin, reaching over **75 million** in revenue, This is primarily driven by their significantly higher average selling price compared to other categories.
+- In contrast, **beauty** products have the **highest quantity sold** but generate the **lowest total revenue**, reflecting the category’s relatively low average selling price, This behavior appears consistent with the natural pricing structure of beauty products rather than indicating weak demand.
+- Additionally, sales volumes across categories remain relatively balanced, suggesting stable customer demand across multiple product categories.
+- Overall, the results indicate a strong relationship between average selling price and total category revenue, with higher-priced categories contributing disproportionately to overall revenue generation.
+---
+
+
+

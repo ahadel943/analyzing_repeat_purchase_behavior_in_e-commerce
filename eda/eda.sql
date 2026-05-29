@@ -105,7 +105,7 @@ select
   customer_type,
   customers_type_count,
   sum(customers_type_count) over() as total_count,
-  round(customers_type_count / sum(customers_type_count) over(), 2) as percentage
+  round(customers_type_count * 100 / sum(customers_type_count) over(), 2) as percentage
 from (
   select
     customer_type,
@@ -133,6 +133,7 @@ from customers
 group by year, month, month_name
 order by year, month, month_name;
 
+-- customers count by signup date
 select 
   extract(year from signup_date) as year,
   extract(month from signup_date) as month,
@@ -191,4 +192,89 @@ select
 from products
 order by price asc
 limit 10;
+
+-- orders by status
+select
+  status,
+  count(order_id) as status_order_count,
+  sum(count(order_id)) over() as tottal_order_count,
+  round(count(order_id) * 100 / sum(count(order_id)) over(), 2) as percentage
+from orders
+group by status;
+
+-- comleted orders over time (monthly)
+select
+  extract(year from order_date) as year,
+  extract(month from order_date) as month,
+  to_char(order_date, 'Mon') as month_name,
+  count(order_id) as order_count,
+  round(avg(total_amount), 2) as avg_order_value,
+  sum(total_amount) as monthly_revenue
+  -- round(sum(sum(total_amount)) over() / sum(count(order_id)) over(), 2) as total_aov
+from orders
+where status = 'completed'
+group by year, month, month_name
+order by year, month, month_name;
+
+select min(order_date)
+from orders; -- 2022-10-09 00:00:00
+
+select max(order_date)
+from orders; -- 2024-01-02 00:00:00
+
+-- orders value stats
+select
+  min(total_amount) as min_order_value,
+  max(total_amount) as max_order_value,
+  round(avg(total_amount), 2) as avg_order_value,
+  percentile_cont(0.25) within group (order by total_amount) as "1st_quartile",
+  percentile_cont(0.50) within group (order by total_amount) as "median / 2nd_quartile",
+  percentile_cont(0.75) within group (order by total_amount) as "3rd quartile"
+from orders
+where status = 'completed';
+
+-- orders count ditribution by order value
+select
+  case
+    when total_amount > 50 and total_amount < 500 then '50-500'
+    when total_amount > 500 and total_amount < 1000 then '500-1000'
+    when total_amount > 1000 and total_amount < 2000 then '1000-2000'
+    when total_amount > 2000 and total_amount < 4000 then '2000-4000'
+    when total_amount > 4000 and total_amount < 7000 then '4000-7000'
+    when total_amount > 7000 and total_amount < 10000 then '7000-10000'
+    else '10000+'
+  end as order_value_bucket,
+  count(order_id) as order_count
+from orders
+where status = 'completed'
+group by order_value_bucket;
+
+-- total sales by category
+select
+  p.category,
+  sum(io.quantity) as total_quantity_sold,
+  sum(io.quantity * io.price) as category_total_revenue,
+  round(avg(io.price), 2) as avg_selling_price,
+  sum(sum(io.quantity * io.price)) over() as overall_total_revenue
+from order_items as io
+join products as p on io.product_id = p.product_id
+join orders as o on io.order_id = o.order_id
+where o.status = 'completed'
+group by p.category
+order by category_total_revenue desc;
+
+-- average order value by customer type
+select 
+  customer_type,
+  count(distinct o.order_id) as orders_count,
+  round(avg(o.total_amount), 2) as avg_order_value,
+  sum(o.total_amount) as total_revenue
+from orders as o
+join customers as c on o.customer_id = c.customer_id
+where o.status = 'completed'
+group by c.customer_type
+order by avg_order_value desc;
+
+
+
 
