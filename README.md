@@ -171,6 +171,11 @@ are pulling the average upward.
 - Additionally, sales volumes across categories remain relatively balanced, suggesting stable customer demand across multiple product categories.
 - Overall, the results indicate a strong relationship between average selling price and total category revenue, with higher-priced categories contributing disproportionately to overall revenue generation.
 ---
-
-
+![revenue_orders_count_by_customer_type](./charts/9.revenue_orders_count_by_customer_type.png)
+- Average order value remains relatively consistent
+across all customer segments, with only minor differences between one-time, ccasional, and loyal customers.
+- However, total revenue contribution differs substantially across segments, Customers labeled as **loyal** generate significantly higher revenue and account for the largest number of completed orders.
+- In other words, **repeat purchasing behavior** appears to have a stronger impact on total revenue than differences in average order value.
+- It is important to note that **customer_type** values are predefined labels and may not perfectly reflect actual customer purchasing behavior.
+---
 
