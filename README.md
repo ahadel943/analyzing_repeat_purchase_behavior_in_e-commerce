@@ -129,3 +129,37 @@ further confirms the category-level pricing patterns observed earlier.
 - The most expensive products are primarily electronics products,
 while the lowest-priced products mainly belong to the beauty category.
 - These observations support the previously identified right-skewed price distribution and reinforce the assumption that electronics products are major contributors to overall price variability.
+---
+![orders_status_overview](./charts/5.orders_status_overview.png)
+- **Completed** orders account for **85.21%** of all orders, while **cancelled** orders represent **14.79%** of total orders.
+- Although the majority of orders are successfully completed, the **cancellation rate** is relatively noticeable and may negatively impact customer purchasing experience.
+- This raises a potential business question regarding whether customers with cancelled orders are less likely to make repeat purchases in the future.
+- Further analysis is required to examine the relationship between cancellation behavior and repeat purchase activity.
+--- 
+![revenue_vs_order_volume_trend](./charts/6.revenue_vs_order_volume_trend.png)
+- Monthly **completed orders**, **average order value**, and **monthly revenue** remained relatively stable throughout most of the observed period.
+- **October 2022** and **January 2024** show unusually low order volumes, which appear to be caused by incomplete monthly data coverage rather than actual business decline.
+- Aside from these partial months, the platform demonstrates consistent operational performance,
+with stable order activity and revenue generation over time.
+- These findings suggest that low repeat purchase behavior may not be primarily driven by declining platform activity, but instead could be related to customer retention, purchasing behavior, pricing sensitivity, or other customer-level factors.
+--- 
+| Variable        | Value              |
+| --------------- | ------------------ |
+| min_order_value        | 51.04       |
+| max_order_value        | 51,677.85   |
+| avg_order_value        | 5,439.70    |
+| 1st_quartile           | 1,635.56    |
+| median / 2nd_quratile  | 3,814.43    |
+| 3rd_quratile           | 7,849.45    |
+- **Completed** order values show substantial variability across the dataset,
+with order values ranging from **51.04** to **51,677.85**.
+- The large gap between the **average order value** (**5,439.70**) and the **median order value** (**3,814.43**) indicates a right-skewed distribution, where a smaller number of high-value orders
+are pulling the average upward.
+- This pricing behavior is likely influenced by the wide variation in product prices across categories, particularly higher-priced electronics products compared to lower-priced beauty products.
+- Additionally, the spread between quartiles suggests considerable variation in customer spending behavior, with the possible presence of high-value outlier orders.
+---
+![orders_distribution_by_order_value_buckets](./charts/7.orders_distribution_by_order_value_buckets.png)
+- **Completed** orders are distributed across multiple order value ranges, indicating relatively diverse customer spending behavior.
+- The **highest** concentration of orders falls within the **2,000–4,000** range, followed by **higher-value** ranges above **4,000**, suggesting that customer purchases are not limited to low-value transactions only.
+- **Lower-value** orders between **50** and **500** represent a smaller portion of completed orders, while **higher-value** order ranges continue to account for a substantial share of total order activity.
+- These patterns suggest a relatively balanced distribution of customer spending levels across the platform, rather than extreme concentration within a single spending segment.
