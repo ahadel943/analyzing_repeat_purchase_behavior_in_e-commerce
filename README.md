@@ -1,6 +1,6 @@
 # **Analyzing Repeat Purchase Behavior in E-commerce**
 
-## Project Overview
+## **Project Overview**
 This project analyzes customer purchasing behavior in an e-commerce business
 to identify potential reasons behind a low Repeat Purchase Rate (RPR).
 
@@ -16,7 +16,7 @@ The project includes:
 - Behavioral segmentation
 - Data visualizations and business insights
 
-## Business Problem
+## **Business Problem**
 The business observed that a relatively small percentage of customers
 make repeat purchases after their first completed order.
 
@@ -35,7 +35,7 @@ The objective is not only to measure the Repeat Purchase Rate,
 but also to identify actionable insights
 that could help improve customer retention.
 
-## Dataset Description
+## **Dataset Description**
 | Table       | Description                             |
 | ----------- | --------------------------------------- |
 | customers   | Customer information and signup details |
@@ -43,10 +43,10 @@ that could help improve customer retention.
 | order_items | Products included in each order         |
 | products    | Product catalog and pricing information |
 
-## Schema Design
+## **Schema Design**
 ![schema](./schema/schema.png)
 
-## Data Preparation & EDA
+## **Data Preparation & EDA**
 ### Data Preparation
 - Checked for missing values across all tables.
 - Verified primary key uniqueness.
@@ -177,5 +177,25 @@ across all customer segments, with only minor differences between one-time, ccas
 - However, total revenue contribution differs substantially across segments, Customers labeled as **loyal** generate significantly higher revenue and account for the largest number of completed orders.
 - In other words, **repeat purchasing behavior** appears to have a stronger impact on total revenue than differences in average order value.
 - It is important to note that **customer_type** values are predefined labels and may not perfectly reflect actual customer purchasing behavior.
----
 
+## **Key Business Questions**
+**Overall Repeat Purchase Behavior**
+- What percentage of customers make repeat purchases, and does the platform demonstrate strong customer retention behavior?
+
+**Repeat Purchase by Product Category**
+- Do certain product categories show weaker repeat purchase behavior compared to others?
+
+**Pricing Impact on Repeat Purchases**
+- Does product or order pricing influence customers’ likelihood of making repeat purchases?
+
+**Cancellation Impact on Customer Retention**
+- Are customers with cancelled orders less likely to return and make future purchases?
+
+**Geographic Differences in Repeat Behavior**
+- Does repeat purchase behavior vary across different cities or regions?
+
+**Revenue Contribution of Repeat Customers**
+- How much do repeat customers contribute to overall revenue and order volume?
+
+**Time-Based Purchasing Trends**
+- Has repeat purchase behavior changed over time, or remained stable throughout the observed period?
