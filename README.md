@@ -180,7 +180,7 @@ across all customer segments, with only minor differences between one-time, ccas
 
 ## **Key Business Questions**
 **Overall Repeat Purchase Behavior**
-- What percentage of customers make repeat purchases, and does the platform demonstrate strong customer retention behavior?
+- What is the overall repeat purchase rate, and what does it indicate about customer retention?
 
 **Repeat Purchase by Product Category**
 - Do certain product categories show weaker repeat purchase behavior compared to others?
@@ -199,3 +199,12 @@ across all customer segments, with only minor differences between one-time, ccas
 
 **Time-Based Purchasing Trends**
 - Has repeat purchase behavior changed over time, or remained stable throughout the observed period?
+
+## **Analysis**
+### **Overall Repeat Purchase Behavior**
+![repeat_purchase_rate_overview](./charts/10.repeat_purchase_rate_overview.png)
+- Approximately **49.34%** of customers made more than one **completed** purchase.
+- This indicates that nearly half of customers returned to make additional purchases after their initial transaction.
+- While repeat purchase rate is not a direct measure of customer retention, it serves as a strong retention indicator. The result suggests that the platform demonstrates a moderate to healthy level of customer retention, with a substantial portion of customers returning to purchase again.
+- Interestingly, the overall repeat purchase rate does not appear critically low at the platform level, This suggests that any retention challenges may be concentrated within specific **customer segments**, **product categories**, **pricing ranges**, or **behavioral patterns** rather than affecting the entire customer base.
+- Further analysis is required to identify which factors most influence repeat purchasing behavior.
