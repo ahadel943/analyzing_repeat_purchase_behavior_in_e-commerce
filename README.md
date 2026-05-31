@@ -208,3 +208,10 @@ across all customer segments, with only minor differences between one-time, ccas
 - While repeat purchase rate is not a direct measure of customer retention, it serves as a strong retention indicator. The result suggests that the platform demonstrates a moderate to healthy level of customer retention, with a substantial portion of customers returning to purchase again.
 - Interestingly, the overall repeat purchase rate does not appear critically low at the platform level, This suggests that any retention challenges may be concentrated within specific **customer segments**, **product categories**, **pricing ranges**, or **behavioral patterns** rather than affecting the entire customer base.
 - Further analysis is required to identify which factors most influence repeat purchasing behavior.
+---
+### Repeat Purchase by Product Category
+![repeat_purchase_rate_by_category](./charts/11.repeat_purchase_rate_by_category.png)
+- The product categories exhibit a highly consistent and stable **Repeat Purchase Rate** (RPR), ranging narrowly between **61.00%** and **64.00%**.
+- This uniform performance indicates that customer retention and product satisfaction are balanced across the platform, customers purchasing from **lower-volume** or **lower-priced** categories (such as **Beauty**) demonstrate a **similar level of loyalty** to those buying from high-revenue segments (such as **Electronics**).
+- Interestingly, every individual category **outperforms** the overall platform repeat purchase rate of **49.34%**, This suggests that when customer activity is analyzed within the context of specific product departments, the data reveals a healthier pattern of **repeat engagement** than the consolidated platform metric indicates.
+- Since product categories show no critical signs of underperformance or structural retention issues, any overarching retention challenges are likely not **category-driven**.
