@@ -215,3 +215,10 @@ across all customer segments, with only minor differences between one-time, ccas
 - This uniform performance indicates that customer retention and product satisfaction are balanced across the platform, customers purchasing from **lower-volume** or **lower-priced** categories (such as **Beauty**) demonstrate a **similar level of loyalty** to those buying from high-revenue segments (such as **Electronics**).
 - Interestingly, every individual category **outperforms** the overall platform repeat purchase rate of **49.34%**, This suggests that when customer activity is analyzed within the context of specific product departments, the data reveals a healthier pattern of **repeat engagement** than the consolidated platform metric indicates.
 - Since product categories show no critical signs of underperformance or structural retention issues, any overarching retention challenges are likely not **category-driven**.
+---
+### Pricing Impact on Repeat Purchases
+![repeat_purchase_rate_by_order_value](./charts/12.repeat_purchase_rate_by_order_value.png)
+- Repeat purchase rates remain relatively consistent across all order value segments, ranging between **71%** and **77%**.
+- No clear relationship was observed between order value and repeat purchasing behavior. Customers who placed **higher-value** orders did not demonstrate significantly different repeat purchase rates compared to customers with **lower-value** orders.
+- This suggests that order pricing alone is unlikely to be a primary driver of repeat purchase behavior within the platform.
+- Further analysis should focus on other potential factors such as cancellation behavior, customer location, or other customer-specific characteristics.
