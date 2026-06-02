@@ -222,3 +222,9 @@ across all customer segments, with only minor differences between one-time, ccas
 - No clear relationship was observed between order value and repeat purchasing behavior. Customers who placed **higher-value** orders did not demonstrate significantly different repeat purchase rates compared to customers with **lower-value** orders.
 - This suggests that order pricing alone is unlikely to be a primary driver of repeat purchase behavior within the platform.
 - Further analysis should focus on other potential factors such as cancellation behavior, customer location, or other customer-specific characteristics.
+---
+### Cancellation Impact on Customer Retention
+![repeat_purchase_rate_by_cancellation_behavior](./charts/13.repeat_purchase_rate_by_cancellation_behavior.png)
+- **Customers who experienced at least one cancelled order demonstrated substantially lower repeat purchase behavior compared to customers with no cancellation history**.
+- The repeat purchase rate declined from **58.66%** among **customers without cancelled** orders to **40.12%** among customers **with cancelled orders**.
+- This suggests that order cancellations may negatively impact customer retention and future purchasing behavior, making cancellation reduction a potential opportunity for improving repeat purchases.
