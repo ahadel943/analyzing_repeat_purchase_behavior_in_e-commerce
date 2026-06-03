@@ -209,22 +209,28 @@ across all customer segments, with only minor differences between one-time, ccas
 - Interestingly, the overall repeat purchase rate does not appear critically low at the platform level, This suggests that any retention challenges may be concentrated within specific **customer segments**, **product categories**, **pricing ranges**, or **behavioral patterns** rather than affecting the entire customer base.
 - Further analysis is required to identify which factors most influence repeat purchasing behavior.
 ---
-### Repeat Purchase by Product Category
+### **Repeat Purchase by Product Category**
 ![repeat_purchase_rate_by_category](./charts/11.repeat_purchase_rate_by_category.png)
 - The product categories exhibit a highly consistent and stable **Repeat Purchase Rate** (RPR), ranging narrowly between **61.00%** and **64.00%**.
 - This uniform performance indicates that customer retention and product satisfaction are balanced across the platform, customers purchasing from **lower-volume** or **lower-priced** categories (such as **Beauty**) demonstrate a **similar level of loyalty** to those buying from high-revenue segments (such as **Electronics**).
 - Interestingly, every individual category **outperforms** the overall platform repeat purchase rate of **49.34%**, This suggests that when customer activity is analyzed within the context of specific product departments, the data reveals a healthier pattern of **repeat engagement** than the consolidated platform metric indicates.
 - Since product categories show no critical signs of underperformance or structural retention issues, any overarching retention challenges are likely not **category-driven**.
 ---
-### Pricing Impact on Repeat Purchases
+### **Pricing Impact on Repeat Purchases**
 ![repeat_purchase_rate_by_order_value](./charts/12.repeat_purchase_rate_by_order_value.png)
 - Repeat purchase rates remain relatively consistent across all order value segments, ranging between **71%** and **77%**.
 - No clear relationship was observed between order value and repeat purchasing behavior. Customers who placed **higher-value** orders did not demonstrate significantly different repeat purchase rates compared to customers with **lower-value** orders.
 - This suggests that order pricing alone is unlikely to be a primary driver of repeat purchase behavior within the platform.
 - Further analysis should focus on other potential factors such as cancellation behavior, customer location, or other customer-specific characteristics.
 ---
-### Cancellation Impact on Customer Retention
+### **Cancellation Impact on Customer Retention**
 ![repeat_purchase_rate_by_cancellation_behavior](./charts/13.repeat_purchase_rate_by_cancellation_behavior.png)
 - **Customers who experienced at least one cancelled order demonstrated substantially lower repeat purchase behavior compared to customers with no cancellation history**.
 - The repeat purchase rate declined from **58.66%** among **customers without cancelled** orders to **40.12%** among customers **with cancelled orders**.
 - This suggests that order cancellations may negatively impact customer retention and future purchasing behavior, making cancellation reduction a potential opportunity for improving repeat purchases.
+---
+### **Geographic Differences in Repeat Behavior**
+![repeat_purchase_rate_by_city](./charts/14.repeat_purchase_rate_by_city.png)
+- Repeat purchase rates remain highly consistent across all cities, ranging between **48%** and **50%**.
+- No significant geographic differences were observed in customer repeat purchasing behavior. The results suggest that customer location is unlikely to be a major factor influencing repeat purchases on the platform.
+- The **city-level repeat purchase rates** closely align with the **overall repeat purchase rate** (**49.34%**), further indicating a stable retention pattern across regions.
