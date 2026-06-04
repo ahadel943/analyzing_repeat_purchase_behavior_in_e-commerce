@@ -234,3 +234,8 @@ across all customer segments, with only minor differences between one-time, ccas
 - Repeat purchase rates remain highly consistent across all cities, ranging between **48%** and **50%**.
 - No significant geographic differences were observed in customer repeat purchasing behavior. The results suggest that customer location is unlikely to be a major factor influencing repeat purchases on the platform.
 - The **city-level repeat purchase rates** closely align with the **overall repeat purchase rate** (**49.34%**), further indicating a stable retention pattern across regions.
+---
+![revenue_share_by_customer_segment](./charts/15.revenue_share_by_customer_segment.png)
+- Although **repeat customers** represent only **49.34%** of customers with completed orders, they generate **78.20%** of total revenue and account for **16,774** completed orders.
+- This indicates that **repeat customers** are the primary revenue drivers of the business, Their contribution to revenue is disproportionately higher than their share of the customer base.
+- As a result, improving repeat purchase behavior and customer retention could have a significant impact on future revenue growth.
