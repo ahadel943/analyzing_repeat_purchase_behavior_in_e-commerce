@@ -58,7 +58,8 @@ The dataset was considered clean and suitable for analysis.**
 
 ### Exploratory Data Analysis (EDA)
 - The **customers** table contains **10,000** customers, The **orders** table contains **25,096** orders, The **products** contains **1,200** products and the **order_items** table contains **62,454** records.
-
+---
+### **Customers by Segment** 
 ![customers_by_segment](./charts/1.customers_by_segment.png)
 - Customer segmentation labels indicate that:
     - 50% of customers are classified as one-time customers.
@@ -67,6 +68,7 @@ The dataset was considered clean and suitable for analysis.**
 - The customer type distribution may suggest relatively weak customer retention behavior, However, these labels are predefined and not directly derived
 from transactional purchase behavior.
 ---
+### **Customers by City**
 ![customers_by_city](./charts/2.customers_by_city.png)
 - Customer distribution across cities appears relatively balanced,
 with no single city dominating the customer base.
@@ -75,6 +77,7 @@ followed closely by **Giza**, **Alexandria**, **Cairo**, and **Tanta**.
 - This suggests that customer acquisition is geographically diversified
 across multiple cities rather than concentrated in one region.
 ---
+### **Customers Signup Trend**
 ![3.monthly_customer_trend](./charts/3.monthly_customer_trend.png)
 - Customer acquisition remained relatively stable throughout the observed period,
 with monthly new customer counts generally ranging between **600** and **800** customers.
@@ -87,6 +90,7 @@ as only the first day of December is present in the dataset.
 suggesting that **low repeat purchase behavior** may be more related to retention
 than acquisition performance.
 ---
+### **Product Status by Category**
 ![product_status_by_category](./charts/4.product_status_by_category.png)
 - Product distribution across categories and product types
 appears relatively consistent throughout the dataset.
@@ -96,6 +100,7 @@ while **hot** and **dead** products appear in smaller and relatively similar pro
 are **predefined labels** rather than classifications directly derived
 from actual product performance or sales behavior.
 ---
+### **Price Statistics**
 | Variable       | Value                      |
 | -------------- | -------------------------- |
 | min_price                 | 50.68           |
@@ -118,6 +123,7 @@ are pulling the average upward**.
 - These patterns suggest the possible presence of **high-price outliers**,
 which may influence customer purchasing behavior and repeat purchase activity.
 ---
+### **Price Statistics by Category**
 | category       | product_count | category_avg_price | category_min_price | category_max_price |
 | -------------- | ------------- | ------------------ | ------------------ | ------------------ |
 | electronics    | 300           | 2,841.24           | 500.69             | 4,990.19           |
@@ -130,12 +136,14 @@ further confirms the category-level pricing patterns observed earlier.
 while the lowest-priced products mainly belong to the beauty category.
 - These observations support the previously identified right-skewed price distribution and reinforce the assumption that electronics products are major contributors to overall price variability.
 ---
+### **Orders Status Overview**
 ![orders_status_overview](./charts/5.orders_status_overview.png)
 - **Completed** orders account for **85.21%** of all orders, while **cancelled** orders represent **14.79%** of total orders.
 - Although the majority of orders are successfully completed, the **cancellation rate** is relatively noticeable and may negatively impact customer purchasing experience.
 - This raises a potential business question regarding whether customers with cancelled orders are less likely to make repeat purchases in the future.
 - Further analysis is required to examine the relationship between cancellation behavior and repeat purchase activity.
 --- 
+### **Revenue and Orders Volume Trend**
 ![revenue_vs_order_volume_trend](./charts/6.revenue_vs_order_volume_trend.png)
 - Monthly **completed orders**, **average order value**, and **monthly revenue** remained relatively stable throughout most of the observed period.
 - **October 2022** and **January 2024** show unusually low order volumes, which appear to be caused by incomplete monthly data coverage rather than actual business decline.
@@ -143,6 +151,7 @@ while the lowest-priced products mainly belong to the beauty category.
 with stable order activity and revenue generation over time.
 - These findings suggest that low repeat purchase behavior may not be primarily driven by declining platform activity, but instead could be related to customer retention, purchasing behavior, pricing sensitivity, or other customer-level factors.
 --- 
+### **Order Value Statistics**
 | Variable        | Value              |
 | --------------- | ------------------ |
 | min_order_value        | 51.04       |
@@ -151,19 +160,20 @@ with stable order activity and revenue generation over time.
 | 1st_quartile           | 1,635.56    |
 | median / 2nd_quratile  | 3,814.43    |
 | 3rd_quratile           | 7,849.45    |
-- **Completed** order values show substantial variability across the dataset,
-with order values ranging from **51.04** to **51,677.85**.
+- **Completed** order values show substantial variability across the dataset, with order values ranging from **51.04** to **51,677.85**.
 - The large gap between the **average order value** (**5,439.70**) and the **median order value** (**3,814.43**) indicates a right-skewed distribution, where a smaller number of high-value orders
 are pulling the average upward.
 - This pricing behavior is likely influenced by the wide variation in product prices across categories, particularly higher-priced electronics products compared to lower-priced beauty products.
 - Additionally, the spread between quartiles suggests considerable variation in customer spending behavior, with the possible presence of high-value outlier orders.
 ---
+### **Orders distribution by Order Value Bucket**
 ![orders_distribution_by_order_value_buckets](./charts/7.orders_distribution_by_order_value_buckets.png)
 - **Completed** orders are distributed across multiple order value ranges, indicating relatively diverse customer spending behavior.
 - The **highest** concentration of orders falls within the **2,000–4,000** range, followed by **higher-value** ranges above **4,000**, suggesting that customer purchases are not limited to low-value transactions only.
 - **Lower-value** orders between **50** and **500** represent a smaller portion of completed orders, while **higher-value** order ranges continue to account for a substantial share of total order activity.
 - These patterns suggest a relatively balanced distribution of customer spending levels across the platform, rather than extreme concentration within a single spending segment.
 ---
+### **Revenue and Units Sold by Category**
 ![revenue_and_units_sold_by_category](./charts/8.revenue_and_units_sold_by_category.png)
 - Revenue contribution differs significantly across product categories.
 - Although **electronics** products do not have the highest sales volume, they generate the **highest total revenue** by a substantial margin, reaching over **75 million** in revenue, This is primarily driven by their significantly higher average selling price compared to other categories.
@@ -171,6 +181,7 @@ are pulling the average upward.
 - Additionally, sales volumes across categories remain relatively balanced, suggesting stable customer demand across multiple product categories.
 - Overall, the results indicate a strong relationship between average selling price and total category revenue, with higher-priced categories contributing disproportionately to overall revenue generation.
 ---
+### **Revenue and Orders Count by Customer Type**
 ![revenue_orders_count_by_customer_type](./charts/9.revenue_orders_count_by_customer_type.png)
 - Average order value remains relatively consistent
 across all customer segments, with only minor differences between one-time, ccasional, and loyal customers.
@@ -242,4 +253,7 @@ across all customer segments, with only minor differences between one-time, ccas
 - As a result, improving repeat purchase behavior and customer retention could have a significant impact on future revenue growth.
 ---
 ### **Time-Based Purchasing Trends** 
-![]
+![repeat_purchase_rate_historical_trend](./charts/16.repeat_purchase_rate_historical_trend.png)
+- After excluding incomplete months (**October 2022 and January 2024**), the repeat purchase rate remained relatively stable throughout the observed period, generally fluctuating between **30%** and **35%**.
+- **No consistent upward or downward** trend was observed, suggesting that repeat purchasing behavior remained largely stable over time.
+- However, **December** showed a noticeable increase in repeat purchase rate in both years, potentially indicating a seasonal effect related to year-end purchasing activity. Further business context would be required to validate this assumption.
