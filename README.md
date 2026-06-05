@@ -272,6 +272,15 @@ across all customer segments, with only minor differences between one-time, ccas
 - **No consistent upward or downward** trend was observed, suggesting that repeat purchasing behavior remained largely stable over time.
 - However, **December** showed a noticeable increase in repeat purchase rate in both years, potentially indicating a seasonal effect related to year-end purchasing activity. Further business context would be required to validate this assumption.
 ---
+## **Key Insights / Conclusion**
+- The platform demonstrates a **moderate but stable customer retention level**, with approximately **49.34% of customers** making repeat purchases over their lifecycle.
+- Although repeat customers represent only about half of the customer base, they are the primary revenue driver, contributing approximately **78% of total revenue**, indicating a strong dependency on returning users.
+- **Cancellation behavior is a key negative driver of retention**, as customers with cancelled orders show significantly lower repeat purchase rates compared to customers with no cancellations.
+- Repeat purchase behavior remains **largely stable over time (~30–35% monthly)**, with minor seasonal spikes observed in December, likely driven by year-end purchasing activity.
+- No significant variation in repeat purchase behavior was observed across **cities**, **product categories**, or **order value segments**, suggesting that retention is not strongly influenced by demographic or pricing segmentation.
+- Overall, customer retention is **not a structural issue in terms of distribution**, but rather an **optimization opportunity driven primarily by cancellation reduction and post-purchase experience improvement**.
+
+---
 ## **Recommendations**
 ### **1. Reduce Cancellation Rate (High Impact)**
 Analysis showed that customers with cancelled orders have significantly lower repeat purchase rates compared to customers with no cancellations. This indicates that order cancellation is a strong negative signal for customer retention.
@@ -317,5 +326,5 @@ Category and pricing analysis showed relatively stable repeat behavior across se
     - Used for creating final visualizations and presenting key insights in a structured business-friendly format.
 - Visual Studio Code (VS Code)
     - Used for organizing SQL scripts, building the project structure, and maintaining documentation (README and analysis files).
-    
+
 These tools were used in combination to ensure efficient data exploration, analysis, and clear communication of insights.
