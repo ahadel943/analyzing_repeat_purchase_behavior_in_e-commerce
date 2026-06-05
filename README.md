@@ -305,3 +305,17 @@ Category and pricing analysis showed relatively stable repeat behavior across se
 - Maintain current pricing strategy but optimize c**ategory-level promotions**.
 - Use **electronics as a revenue anchor** category, while increasing volume in beauty & clothing through discounts or bundles.
 - Test targeted promotions for lower-revenue categories to increase basket size rather than changing base pricing.
+
+## Tools Used
+- PostgreSQL
+    - Used as the primary database management system (DBMS) for querying, aggregating, and analyzing transactional data.
+- Beekeeper Studio
+    - Used as the SQL client for writing and executing queries, and exploring database tables in an interactive environment.
+- Microsoft Excel
+    - Used for quick data validation, exploratory charts, and supporting visual analysis during EDA.
+- Microsoft PowerPoint
+    - Used for creating final visualizations and presenting key insights in a structured business-friendly format.
+- Visual Studio Code (VS Code)
+    - Used for organizing SQL scripts, building the project structure, and maintaining documentation (README and analysis files).
+    
+These tools were used in combination to ensure efficient data exploration, analysis, and clear communication of insights.
