@@ -272,7 +272,7 @@ across all customer segments, with only minor differences between one-time, ccas
 - **No consistent upward or downward** trend was observed, suggesting that repeat purchasing behavior remained largely stable over time.
 - However, **December** showed a noticeable increase in repeat purchase rate in both years, potentially indicating a seasonal effect related to year-end purchasing activity. Further business context would be required to validate this assumption.
 ---
-## **Key Insights / Conclusion**
+## **Key Insights**
 - The platform demonstrates a **moderate but stable customer retention level**, with approximately **49.34% of customers** making repeat purchases over their lifecycle.
 - Although repeat customers represent only about half of the customer base, they are the primary revenue driver, contributing approximately **78% of total revenue**, indicating a strong dependency on returning users.
 - **Cancellation behavior is a key negative driver of retention**, as customers with cancelled orders show significantly lower repeat purchase rates compared to customers with no cancellations.
