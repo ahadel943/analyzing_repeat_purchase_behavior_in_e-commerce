@@ -35,6 +35,20 @@ The objective is not only to measure the Repeat Purchase Rate,
 but also to identify actionable insights
 that could help improve customer retention.
 
+## **Executive Summary**
+This project analyzes customer purchasing behavior using transactional data to understand repeat purchase patterns, revenue distribution, cancellation impact, and behavioral differences across customers, product categories, pricing segments, and geography.
+
+The primary objective is to evaluate customer retention through Repeat Purchase Rate (RPR) and identify key drivers influencing repeat buying behavior and revenue contribution.
+
+Key findings from the analysis include:
+- **Approximately 49.34%** of customers made more than one completed purchase, indicating a moderate level of overall customer retention.
+- Repeat customers contribute approximately **78% of total revenue**, highlighting their critical importance to business profitability despite representing only half of the customer base.
+- Customers with **cancelled orders** show significantly **lower repeat purchase behavior** compared to customers with no cancellations, making cancellation a strong negative signal for retention.
+- Repeat purchase behavior remains relatively **stable** over time (**~30–35% monthly**), with noticeable seasonal increases observed during year-end periods.
+- No significant variation in repeat purchase behavior was observed across **cities**, **product categories**, or **order value segments**, suggesting that retention is driven more by behavioral factors than demographic or pricing segmentation.
+
+Overall, the analysis indicates that while customer acquisition is relatively stable, **improving retention particularly by reducing cancellations represents the highest leverage opportunity for increasing revenue growth**.
+
 ## **Dataset Description**
 | Table       | Description                             |
 | ----------- | --------------------------------------- |
@@ -257,3 +271,37 @@ across all customer segments, with only minor differences between one-time, ccas
 - After excluding incomplete months (**October 2022 and January 2024**), the repeat purchase rate remained relatively stable throughout the observed period, generally fluctuating between **30%** and **35%**.
 - **No consistent upward or downward** trend was observed, suggesting that repeat purchasing behavior remained largely stable over time.
 - However, **December** showed a noticeable increase in repeat purchase rate in both years, potentially indicating a seasonal effect related to year-end purchasing activity. Further business context would be required to validate this assumption.
+---
+## **Recommendations**
+### **1. Reduce Cancellation Rate (High Impact)**
+Analysis showed that customers with cancelled orders have significantly lower repeat purchase rates compared to customers with no cancellations. This indicates that order cancellation is a strong negative signal for customer retention.
+#### **Recommended Actions:**
+- Investigate root causes of cancellations (delivery delays, pricing issues, product availability, or UX friction).
+- Implement a proactive order confirmation & tracking system to reduce uncertainty after purchase.
+- Introduce a **post-cancellation recovery flow**, such as:
+    - Discount on next order
+    - Personalized re-engagement email/SMS
+- Flag customers with cancelled orders and target them with **win-back campaigns**.
+- Monitor cancellation rate alongside repeat purchase rate as a combined KPI.
+
+### **2. Improve Customer Retention (High Impact)**
+Although the overall repeat purchase rate is relatively stable (**~31–35% monthly**), only **~49%** of customers make repeat purchases across their lifecycle, while repeat customers contribute **~78%** of **total revenue**.
+#### **Recommended Actions:**
+- Launch a **loyalty program** to incentivize second and third purchases.
+- Use **behavior-based segmentation** (new vs returning customers) to personalize marketing campaigns.
+- Strengthen onboarding experience to increase the probability of second purchase within the first 30 days.
+- Introduce **retargeting campaigns** for first-time buyers who do not return within a defined period.
+
+### **3. Strengthen Revenue from High-Value Segments (Medium Impact)**
+Repeat customers drive a disproportionate share of revenue, indicating that increasing retention has a direct financial impact.
+#### **Recommended Actions:**
+- Focus marketing budget on **high-LTV repeat** customers, not just acquisition.
+- Build **VIP** tiers for high-frequency or high-spending customers.
+- Introduce **bundling or subscription-style** offers in high-performing categories (e.g., electronics & home).
+
+### **4. Category & Pricing Strategy Optimization (Low Impact)**
+Category and pricing analysis showed relatively stable repeat behavior across segments, suggesting that pricing is not the primary driver of retention differences. However, revenue contribution varies significantly by category.
+#### **Recommended Actions:**
+- Maintain current pricing strategy but optimize c**ategory-level promotions**.
+- Use **electronics as a revenue anchor** category, while increasing volume in beauty & clothing through discounts or bundles.
+- Test targeted promotions for lower-revenue categories to increase basket size rather than changing base pricing.
